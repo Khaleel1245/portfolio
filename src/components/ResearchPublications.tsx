@@ -52,7 +52,7 @@ const SubSection: React.FC<{
                             <thead>
                                 <tr className={`bg-gradient-to-r ${color} text-white`}>
                                     {columns.map((col) => (
-                                        <th key={col} className="px-6 py-4 text-left text-xs font-bold uppercase tracking-wider">
+                                        <th key={col} className="pl-12 pr-6 py-4 text-left text-xs font-bold uppercase tracking-wider">
                                             {col}
                                         </th>
                                     ))}
@@ -71,7 +71,7 @@ const SubSection: React.FC<{
                                         {columns.map((col) => {
                                             const val = row[col];
                                             return (
-                                                <td key={col} className="px-6 py-5 text-sm text-slate-700 font-medium">
+                                                <td key={col} className="pl-12 pr-6 py-5 text-sm text-slate-700 font-medium">
                                                     {isValidUrl(val) ? (
                                                         <a
                                                             href={val}

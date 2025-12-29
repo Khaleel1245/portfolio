@@ -132,7 +132,7 @@ export const Hero: React.FC<HeroProps> = ({ data, publicationStats, socialLinks 
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="flex flex-col space-y-8 md:pr-10 md:-translate-y-10 items-start"
+                    className="flex flex-col space-y-8 md:pr-10 md:pl-12 md:-translate-y-10 items-start"
                 >
                     {/* Greeting */}
                     <motion.h3
@@ -244,7 +244,7 @@ export const Hero: React.FC<HeroProps> = ({ data, publicationStats, socialLinks 
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.6 }}
-                        className="flex flex-wrap gap-4 -ml-4"
+                        className="flex flex-wrap gap-4"
                     >
                         {[
                             { icon: <Mail size={20} />, href: '#contact', color: 'bg-[#10b981]' },
@@ -272,7 +272,7 @@ export const Hero: React.FC<HeroProps> = ({ data, publicationStats, socialLinks 
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.7 }}
                         href="#contact"
-                        className="btn-premium px-6 py-4 rounded-full text-white font-bold text-lg w-fit shadow-md hover:shadow-lg bg-[#10b981] -ml-3 mr-auto"
+                        className="btn-premium px-6 py-4 rounded-full text-white font-bold text-lg w-fit shadow-md hover:shadow-lg bg-[#10b981] mr-auto"
                     >
                         Let's Connect
                     </motion.a>
